@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+require 'pathname'
+$:.unshift Pathname.new(__FILE__).realpath.join('../../lib') if $0 == __FILE__
+require 'thor'
+require "touchie"
+
+module Touchie
+  class Command < Thor
+    desc "odd", "search odd size images"
+    def odd
+      puts "search odd size images"
+    end
+  end
+end
+
+Touchie::Command.start
