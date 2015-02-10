@@ -6,6 +6,6 @@ module Touchie
     image_paths.map do |image_path|
       size = FastImage.size(image_path)
       image_path if !size.nil? && (size[0].odd? || size[1].odd?)
-    end
+    end.reject(&:nil?)
   end
 end

@@ -10,7 +10,7 @@ module Touchie
     desc "odd", "search odd size images"
     def odd(path)
       image_paths = Dir.glob(path + "/**/*.{jpeg,jpg,png,gif,bmp}")
-      found = Touchie.find_odd_size_images(image_paths).reject(&:nil?)
+      found = Touchie.find_odd_size_images(image_paths)
 
       found.each do |path|
         puts path
