@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Touchie::VERSION
   spec.authors       = ["Masami Yonehara"]
   spec.email         = ["zeitdiebe@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{the tool that find odd images}
+  spec.description   = %q{the tool that find odd images}
   spec.homepage      = ""
   spec.license       = "MIT"
 
