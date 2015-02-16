@@ -4,23 +4,17 @@ Command line tool to find illigal images
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'touchie'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install touchie
+```bash
+$ gem install touchie
+```
 
 ## Usage
 
+```bash
+touchie odd ./
 ```
-touchie odd
-```
+
+You can specified the directory to search odd images recursively.
 
 ## Contributing
 
