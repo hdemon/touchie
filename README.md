@@ -1,6 +1,6 @@
 # Touchie
 
-TODO: Write a gem description
+Command line tool to find illigal images
 
 ## Installation
 
@@ -18,7 +18,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+touchie odd
+```
 
 ## Contributing
 
