@@ -3,7 +3,6 @@ require 'pathname'
 $:.unshift Pathname.new(__FILE__).realpath.join('../../lib') if $0 == __FILE__
 require 'thor'
 require "touchie"
-require "pry"
 
 module Touchie
   class Command < Thor
