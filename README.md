@@ -24,7 +24,7 @@ $ touchy odd ./hoge/*.png
 ### Find the odd size images and extend this size to even one, and fill the space with transparent pixel.
 
 ```bash
-$ touchy odd ./hoge/*.png
+$ touchy fix ./hoge/*.png
 ```
 
 ## Contributing
