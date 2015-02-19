@@ -11,7 +11,7 @@ Command line tool to find and modify illigal images
 2 . install imagemagick
 
 ```bash
-# ex: Mac
+# ex: if you use MacOS
 $ brew install imagemagick
 ```
 
