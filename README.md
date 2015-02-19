@@ -6,8 +6,16 @@ Command line tool to find and modify illigal images
 
 ## Installation
 
-1. install ruby(>= 1.8.7)
-2. execute the following command
+1 . install ruby(>= 1.8.7)
+
+2 . install imagemagick
+
+```bash
+# ex: Mac
+$ brew install imagemagick
+```
+
+3 . execute the following command
 
 ```bash
 $ gem install touchy
