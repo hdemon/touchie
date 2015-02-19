@@ -1,6 +1,6 @@
 # Touchie
 
-Command line tool to find illigal images
+Command line tool to find and modify illigal images
 
 [日本語ガイド](./README_JP.md)
 
