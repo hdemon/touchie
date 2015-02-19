@@ -32,10 +32,8 @@ touchie odd 画像のパス
 touchie odd ./hoge/*.png
 ```
 
-./hogeディレクトリ以下にある、全てのpng / jpeg / jpgファイルの中から探す。
+### 奇数サイズの画像を探し出し、偶数サイズに修正した上で、生じた隙間を透明なピクセルで埋める
 
 ```bash
-touchie odd ./hoge/**/*.{png,jpeg,jpg}
+touchie fix 画像のパス
 ```
-
-ワイルドカードの規則については、[こちら](http://docs.ruby-lang.org/ja/1.9.3/method/Dir/s/glob.html)を参照して下さい。

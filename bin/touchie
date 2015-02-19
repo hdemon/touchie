@@ -7,20 +7,16 @@ require "touchie"
 module Touchie
   class Command < Thor
     desc "odd", "search odd size images"
-    def odd(path)
-      image_paths = Dir.glob(path)
-      found = Touchie.find_odd_size_images(image_paths)
+    def odd(*path)
+      found = Touchie.find_odd_size_images(path)
 
-      found.each do |path|
-        puts path
-      end
+      found.each(&:puts)
       puts found.length.to_s + " files are found!"
     end
 
     desc "fix", "fix image's size to even"
-    def fix(path)
-      image_paths = Dir.glob(path)
-      found = Touchie.find_odd_size_images(image_paths)
+    def fix(*path)
+      found = Touchie.find_odd_size_images(path)
 
       found.each do |path|
         image = Magick::Image.read(path).first
