@@ -5,7 +5,7 @@ require 'touchy/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "touchy"
-  spec.version       = touchy::VERSION
+  spec.version       = Touchy::VERSION
   spec.authors       = ["Masami Yonehara"]
   spec.email         = ["zeitdiebe@gmail.com"]
   spec.summary       = %q{the tool that find odd images}

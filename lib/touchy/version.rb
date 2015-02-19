@@ -1,3 +1,3 @@
-module touchy
+module Touchy
   VERSION = "0.0.6"
 end
