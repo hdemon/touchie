@@ -16,19 +16,19 @@ $ gem install touchy
 ### 奇数サイズの画像を探し出す
 
 ```bash
-touchy odd 画像のパス
+$ touchy odd ./hoge/*.png
 ```
 
-#### 例
-
-./hogeディレクトリ直下のpngファイルの中から探す
+もしくは、[Rubyのglob](http://docs.ruby-lang.org/ja/1.9.3/method/Dir/s/glob.html)に基づいたパスを指定することもできます。
 
 ```bash
-touchy odd ./hoge/*.png
+$ touchy odd --path='./hoge/**/*.png'
 ```
 
 ### 奇数サイズの画像を探し出し、偶数サイズに修正した上で、生じた隙間を透明なピクセルで埋める
 
 ```bash
-touchy fix 画像のパス
+$ touchy fix ./hoge/*.png
 ```
+
+引数についてはoddメソッドと同じです。
