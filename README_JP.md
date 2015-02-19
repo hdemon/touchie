@@ -16,10 +16,26 @@ Ruby 1.8.7以上をインストールして下さい。
 $ gem install touchie
 ```
 
-## 実行方法
+## 使い方
 
-1. 奇数サイズの画像を探し出す
+### 奇数サイズの画像を探し出す
 
 ```bash
-touchie odd ./
+touchie odd 画像のパス
 ```
+
+#### 例
+
+./hogeディレクトリ直下のpngファイルの中から探す。
+
+```bash
+touchie odd ./hoge/*.png
+```
+
+./hogeディレクトリ以下にある、全てのpng / jpeg / jpgファイルの中から探す。
+
+```bash
+touchie odd ./hoge/**/*.{png,jpeg,jpg}
+```
+
+ワイルドカードの規則については、[こちら](http://docs.ruby-lang.org/ja/1.9.3/method/Dir/s/glob.html)を参照して下さい。

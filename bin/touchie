@@ -8,7 +8,7 @@ module Touchie
   class Command < Thor
     desc "odd", "search odd size images"
     def odd(path)
-      image_paths = Dir.glob(path + "/**/*.{jpeg,jpg,png,gif,bmp}")
+      image_paths = Dir.glob(path)
       found = Touchie.find_odd_size_images(image_paths)
 
       found.each do |path|
