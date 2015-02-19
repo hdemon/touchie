@@ -6,17 +6,26 @@ Command line tool to find illigal images
 
 ## Installation
 
+1. install ruby(>= 1.8.7)
+2. execute the following command
+
 ```bash
 $ gem install touchie
 ```
 
 ## Usage
 
+### Find the images that has odd size
+
 ```bash
-touchie odd ./
+$ touchie odd ./hoge/*.png
 ```
 
-You can specified the directory to search odd images recursively.
+### Find the odd size images and extend the size to even one, and fill the space with transparent pixel.
+
+```bash
+$ touchie odd ./hoge/*.png
+```
 
 ## Contributing
 
