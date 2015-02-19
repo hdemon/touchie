@@ -4,11 +4,11 @@ $:.unshift Pathname.new(__FILE__).realpath.join('../../lib') if $0 == __FILE__
 require 'thor'
 require "touchy"
 
-module touchy
+module Touchy
   class Command < Thor
     desc "odd", "search odd size images"
     def odd(*path)
-      found = touchy.find_odd_size_images(path)
+      found = Touchy.find_odd_size_images(path)
 
       found.each do |path|
         puts path
@@ -18,21 +18,21 @@ module touchy
 
     desc "fix", "fix image's size to even"
     def fix(*path)
-      found = touchy.find_odd_size_images(path)
+      found = Touchy.find_odd_size_images(path)
 
       found.each do |path|
         image = Magick::Image.read(path).first
-        new_image = touchy.extend_size_to_odd image
+        new_image = Touchy.extend_size_to_odd image
         new_image.write(path)
       end
     end
 
     desc "create_test_image", "create test image"
     def create_test_image(x, y, name)
-      image = touchy.create_transparent_image x.to_i, y.to_i
+      image = Touchy.create_transparent_image x.to_i, y.to_i
       image.write(name)
     end
   end
 end
 
-touchy::Command.start
+Touchy::Command.start
