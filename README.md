@@ -1,6 +1,6 @@
 # Touchy
 
-Command line tool to find illigal images
+Command line tool to find and modify illigal images
 
 [日本語ガイド](./README_JP.md)
 
@@ -21,7 +21,7 @@ $ gem install touchy
 $ touchy odd ./hoge/*.png
 ```
 
-### Find the odd size images and extend the size to even one, and fill the space with transparent pixel.
+### Find the odd size images and extend this size to even one, and fill the space with transparent pixel.
 
 ```bash
 $ touchy odd ./hoge/*.png
