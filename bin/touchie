@@ -17,6 +17,18 @@ module Touchie
       puts found.length.to_s + " files are found!"
     end
 
+    desc "fix", "fix image's size to even"
+    def fix(path)
+      image_paths = Dir.glob(path)
+      found = Touchie.find_odd_size_images(image_paths)
+
+      found.each do |path|
+        image = Magick::Image.read(path).first
+        new_image = Touchie.extend_size_to_odd image
+        new_image.write(path)
+      end
+    end
+
     desc "create_test_image", "create test image"
     def create_test_image(x, y, name)
       image = Touchie.create_transparent_image x.to_i, y.to_i
