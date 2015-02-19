@@ -10,7 +10,9 @@ module Touchie
     def odd(*path)
       found = Touchie.find_odd_size_images(path)
 
-      found.each(&:puts)
+      found.each do |path|
+        puts path
+      end
       puts found.length.to_s + " files are found!"
     end
 
