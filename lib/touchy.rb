@@ -1,9 +1,9 @@
-require "touchie/version"
+require "touchy/version"
 require "fastimage"
 require "rmagick"
 include Magick
 
-module Touchie
+module touchy
   def self.find_odd_size_images(image_paths)
     image_paths.map do |image_path|
       size = FastImage.size(image_path)

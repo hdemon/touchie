@@ -1,4 +1,4 @@
-# Touchie
+# Touchy
 
 奇数サイズ等の画像を探し出すためのコマンドラインツールです。
 
@@ -8,7 +8,7 @@
 2. コンソールで以下のコマンドを実行して下さい。
 
 ```bash
-$ gem install touchie
+$ gem install touchy
 ```
 
 ## 使い方
@@ -16,7 +16,7 @@ $ gem install touchie
 ### 奇数サイズの画像を探し出す
 
 ```bash
-touchie odd 画像のパス
+touchy odd 画像のパス
 ```
 
 #### 例
@@ -24,11 +24,11 @@ touchie odd 画像のパス
 ./hogeディレクトリ直下のpngファイルの中から探す。
 
 ```bash
-touchie odd ./hoge/*.png
+touchy odd ./hoge/*.png
 ```
 
 ### 奇数サイズの画像を探し出し、偶数サイズに修正した上で、生じた隙間を透明なピクセルで埋める
 
 ```bash
-touchie fix 画像のパス
+touchy fix 画像のパス
 ```

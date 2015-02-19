@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'touchie/version'
+require 'touchy/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "touchie"
-  spec.version       = Touchie::VERSION
+  spec.name          = "touchy"
+  spec.version       = touchy::VERSION
   spec.authors       = ["Masami Yonehara"]
   spec.email         = ["zeitdiebe@gmail.com"]
   spec.summary       = %q{the tool that find odd images}
