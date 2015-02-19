@@ -2,6 +2,8 @@
 
 Command line tool to find illigal images
 
+[日本語ガイド](./README_JP.md)
+
 ## Installation
 
 ```bash
