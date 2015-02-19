@@ -4,8 +4,16 @@
 
 ## インストール
 
-1. Ruby 1.8.7以上をインストールする
-2. コンソールで以下のコマンドを実行する
+1 . Ruby 1.8.7以上をインストールする
+
+2 . ImageMagickをインストールする
+
+```bash
+# 例: Macの場合
+brew install imagemagick
+```
+
+3 . コンソールで以下のコマンドを実行する
 
 ```bash
 $ gem install touchy
