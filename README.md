@@ -21,7 +21,7 @@ $ gem install touchie
 $ touchie odd ./hoge/*.png
 ```
 
-### Find the odd size images and extend the size to even one, and fill the space with transparent pixel.
+### Find the odd size images and extend this size to even one, and fill the space with transparent pixel.
 
 ```bash
 $ touchie odd ./hoge/*.png
