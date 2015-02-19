@@ -1,5 +1,7 @@
 require "touchie/version"
 require "fastimage"
+require "rmagick"
+include Magick
 
 module Touchie
   def self.find_odd_size_images(image_paths)
