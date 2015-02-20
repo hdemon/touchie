@@ -19,6 +19,8 @@ brew install imagemagick
 $ gem install touchy
 ```
 
+rbenvを使っている場合は、続けて`rbenv rehash`を行って下さい。
+
 ## 使い方
 
 ### 奇数サイズの画像を探し出す
