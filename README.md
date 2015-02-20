@@ -11,8 +11,10 @@ Command line tool to find and modify illigal images
 2 . install imagemagick
 
 ```bash
-# ex: if you use MacOS
+# MacOS
 $ brew install imagemagick
+# Debian/Ubuntu
+$ sudo apt-get install libmagickwand-dev imagemagick
 ```
 
 3 . execute the following command
