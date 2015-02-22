@@ -9,8 +9,10 @@
 2 . ImageMagickをインストールする
 
 ```bash
-# 例: Macの場合
-brew install imagemagick
+# Macの場合
+$ brew install imagemagick
+# Debian/Ubuntuの場合
+$ sudo apt-get install libmagickwand-dev imagemagick
 ```
 
 3 . コンソールで以下のコマンドを実行する
