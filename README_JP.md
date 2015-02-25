@@ -4,22 +4,25 @@
 
 ## インストール
 
-1 . Ruby 1.8.7以上をインストールする
+1. Ruby 1.8.7以上をインストールする
 
-2 . ImageMagickをインストールする
+2. ImageMagickをインストールする
 
-```bash
-# Macの場合
-$ brew install imagemagick
-# Debian/Ubuntuの場合
-$ sudo apt-get install libmagickwand-dev imagemagick
-```
+  ##### Macの場合
+  ```bash
+  $ brew install imagemagick
+  ```
+  
+  ##### Debian/Ubuntuの場合
+  ```bash
+  $ sudo apt-get install imagemagick libmagickwand-dev
+  ```
 
-3 . コンソールで以下のコマンドを実行する
+3. コンソールで以下のコマンドを実行する
 
-```bash
-$ gem install touchy
-```
+  ```bash
+  $ gem install touchy
+  ```
 
 rbenvを使っている場合は、続けて`rbenv rehash`を行って下さい。
 
@@ -38,7 +41,7 @@ $ touchy odd ./hoge/*.png
 $ touchy odd --path='./hoge/**/*.png'
 ```
 
-### 奇数サイズの画像を探し出し、縦横を偶数サイズに拡張した上で、生じた隙間を透明なピクセルで埋める
+### 奇数サイズの画像を探し出し、縦もしくは横に1pxを加えて偶数サイズに拡張した上で、生じた隙間を透明なピクセルで埋める
 
 ```bash
 $ touchy fix ./hoge/*.png
