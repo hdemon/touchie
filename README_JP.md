@@ -34,6 +34,7 @@ $ touchy odd ./hoge/*.png
 もしくは、[Rubyのglob](http://docs.ruby-lang.org/ja/1.9.3/method/Dir/s/glob.html)に基づいたパスを指定することもできます。
 
 ```bash
+# ./hoge以下の全ての階層のディレクトリにある.pngファイルを対象にする。
 $ touchy odd --path='./hoge/**/*.png'
 ```
 
