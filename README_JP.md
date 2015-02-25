@@ -24,7 +24,7 @@
   $ gem install touchy
   ```
 
-rbenvを使っている場合は、続けて`rbenv rehash`を行って下さい。
+  rbenvを使っている場合は、続けて`rbenv rehash`を行って下さい。
 
 ## 使い方
 
