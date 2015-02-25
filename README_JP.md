@@ -47,7 +47,7 @@ $ touchy odd --path='./hoge/**/*.png'
 $ touchy fix ./hoge/*.png
 ```
 
-引数についてはoddメソッドと同じです。
+引数についてはoddコマンドと同じです。
 
 ## 将来の予定
 
