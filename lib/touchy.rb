@@ -1,5 +1,4 @@
 require "touchy/version"
-require "fastimage"
 require "rmagick"
 include Magick
 
